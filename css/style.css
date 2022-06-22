@@ -1,4 +1,4 @@
-/* RESET */
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+header a,
+#nav-title,
+.welcome-child {
+  color: #555;
+}
 /* NAVBAR/HEADER */
 header {
   display: flex;
@@ -23,11 +28,10 @@ header li {
   font-variant: small-caps;
   list-style: none;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 1.1rem;
 }
 header a {
   text-decoration: none;
-  color: #555;
   transition: all 0.3s ease 0s;
 }
 header a:hover {
@@ -35,21 +39,27 @@ header a:hover {
 }
 #nav-title {
   font-size: 1.5em;
-  color: #555;
 }
 
 /* WELCOME SECTION (PICTURE AND INTRO) */
 .welcome-container {
   display: flex;
   margin-top: 10%;
+  justify-content: space-between;
 }
 .welcome-child {
   flex: 1;
-  border: 2px solid black;
+  border: solid black;
 }
 .welcome-child:first-child {
-  margin-right: 20px;
+  margin-right: 2.5rem;
 }
-.welcome-child:first-child img {
-  float: right;
+.welcome-image {
+  display: flex;
+  border-radius: 100rem;
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: auto;
 }
