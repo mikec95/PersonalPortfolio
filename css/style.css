@@ -5,9 +5,11 @@
 }
 body {
   position: relative;
+  background-color: #f8f8f6;
 }
 .container {
-  background-color: #dfd7c6;
+  width: 100%;
+  margin: 0 auto;
 }
 /* NAVBAR/HEADER */
 header {
@@ -15,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  box-shadow: 0 1px 8px #ddd;
+  font-family: sans-serif;
 }
 header li {
   list-style: none;
