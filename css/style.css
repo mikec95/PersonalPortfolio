@@ -1,32 +1,44 @@
-/* RESET */
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 body {
   position: relative;
-  background-color: #f8f8f6;
+  background-color: #dfd7c6;
 }
 .container {
   width: 100%;
   margin: 0 auto;
 }
+header a,
+#nav-title,
+.welcome-child {
+  color: #555;
+}
 /* NAVBAR/HEADER */
+#nav-title {
+  color: #668a84;
+}
+header img {
+  /* width: auto;
+  height: auto; */
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  font-family: sans-serif;
 }
 header li {
+  font-variant: small-caps;
   list-style: none;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 1.1rem;
 }
 header a {
   text-decoration: none;
-  color: #555;
   transition: all 0.3s ease 0s;
 }
 header a:hover {
@@ -34,5 +46,30 @@ header a:hover {
 }
 #nav-title {
   font-size: 1.5em;
-  color: #555;
+}
+
+/* WELCOME SECTION (PICTURE AND INTRO) */
+.welcome {
+  height: 100%;
+}
+.welcome-container {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-between;
+}
+.welcome-child {
+  flex: 1;
+  /* border: solid black; */
+}
+.welcome-child:first-child {
+  margin-right: 15rem;
+}
+.welcome-image {
+  display: flex;
+  border-radius: 100rem;
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: auto;
 }
