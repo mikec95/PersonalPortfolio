@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet" />
-    <title>Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <title>Michael Carbonari | Portfolio</title>
   </head>
 
   <body>
@@ -15,7 +17,7 @@
     <div class="container">
       <!-- NAVBAR -->
       <header>
-        <h1 id="nav-title">Michael Carbonari</h1>
+        <a href="#"><img src="../images/output-onlinetexttools.png"/></a>
         <nav>
           <ul>
             <a href="#cards"><li>About</li></a>
@@ -25,16 +27,22 @@
       </header>
 
       <!-- WELCOME SCREEN IMAGE AND TEXT -->
-      <article class="welcome">
+      <section class="welcome" id="welcome">
         <div class="welcome-container">
           <span class="welcome-child"><img class="welcome-image" src="../images/image0.png" /></span>
-          <span class="welcome-child"><p>Hey, I'm Mike. Thanks for visiting my website.</p></span>
+          <span class="welcome-child"
+            ><p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae asperiores eaque qui facilis placeat
+              odit quidem consequuntur officia deserunt excepturi labore soluta perspiciatis culpa aliquam id ipsum,
+              exercitationem iste nisi.
+            </p></span
+          >
         </div>
-      </article>
+      </section>
 
       <!-- CARDS -->
-      <div id="cards" class="cards-flex-container"></div>
-    </div>
+      <section id="cards" class="cards"></div>
+      </section>
 
     <footer>footer</footer>
   </body>
