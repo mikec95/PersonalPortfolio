@@ -6,55 +6,53 @@
 }
 body {
   position: relative;
-  background-color: white;
+  background-color: #fffee9;
 }
 .container {
   width: 100%;
   margin: 0 auto;
 }
 header a,
-#nav-title,
 .welcome-child {
   color: #555;
 }
-#nav-title,
 .welcome-container {
   color: #668a84;
 }
 
 /* NAVBAR/HEADER */
-#nav-title {
-  font-variant: small-caps;
-}
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
 }
-header li {
+header ul li {
   font-variant: small-caps;
   list-style: none;
   display: inline-block;
-  padding: 0 1.1rem;
+  padding: 0 1.5rem;
   border: solid black;
   border-width: thin;
   border-radius: 100rem;
 }
-header a {
+header ul a {
   text-decoration: none;
+  padding: 0.5rem;
   transition: all 0.3s ease 0s;
   border-radius: 100;
   border-width: thin;
+  align-items: center;
 }
+
 nav ul li a:hover,
 nav ul li:hover {
   background-color: #668a84;
-  color: white;
+  color: #fffee9;
   cursor: pointer;
-}
-#nav-title {
-  font-size: 1.5em;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 /* WELCOME SECTION (PICTURE AND INTRO) */
@@ -84,6 +82,10 @@ nav ul li:hover {
 
 /* ABOUT CARDS */
 #cards {
+}
+.cards {
+  height: 80vh;
+  background-color: #668a84;
 }
 .cards-flex-container {
   height: 50vh;
