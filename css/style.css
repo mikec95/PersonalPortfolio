@@ -21,6 +21,8 @@ header a,
 }
 
 /* NAVBAR/HEADER */
+#navbar-logo {
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +59,7 @@ nav ul li:hover {
 
 /* WELCOME SECTION (PICTURE AND INTRO) */
 .welcome {
-  height: 80vh;
+  height: 100vh;
 }
 .welcome-container {
   display: flex;
@@ -84,7 +86,7 @@ nav ul li:hover {
 #cards {
 }
 .cards {
-  height: 80vh;
+  height: 100vh;
   background-color: #668a84;
 }
 .cards-flex-container {
