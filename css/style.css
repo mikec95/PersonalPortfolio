@@ -4,24 +4,52 @@
   padding: 0;
   font-family: 'Sarabun', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
-  background-color: #fffee9;
 }
-.container {
+body,
+header,
+.welcome-container {
+  background-color: #ee1d52;
+}
+.parent-container {
   width: 100%;
   margin: 0 auto;
 }
+h2,
 header a,
-.welcome-child {
-  color: #555;
+.welcome p {
+  color: #ffffff;
 }
-.welcome-container {
-  color: #668a84;
+.hide {
+  visibility: hidden;
+}
+
+/* WELCOME SECTION (PICTURE AND INTRO) */
+.welcome {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3rem;
+}
+.welcome span {
+  height: 66vh;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+.welcome p {
+  font-variant: small-caps;
+  text-align: left;
+  font-size: 5rem;
+  display: inline;
+  word-wrap: normal;
 }
 
 /* NAVBAR/HEADER */
-#navbar-logo {
+#navbar {
 }
 header {
   display: flex;
@@ -35,64 +63,35 @@ header ul li {
   list-style: none;
   display: inline-block;
   padding: 0 1.5rem;
-  border: solid black;
-  border-width: thin;
   border-radius: 100rem;
 }
-header ul a {
+header nav ul a {
   text-decoration: none;
   padding: 0.5rem;
   transition: all 0.3s ease 0s;
   border-radius: 100;
-  border-width: thin;
   align-items: center;
 }
-
-nav ul li a:hover,
-nav ul li:hover {
-  background-color: #668a84;
+nav ul li:hover a,
+nav ul li a:active {
   color: #fffee9;
+  text-decoration: line-through;
+}
+/* nav ul li:hover {
+    -webkit-transition: all 0.4s ease;
   cursor: pointer;
   transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-}
-
-/* WELCOME SECTION (PICTURE AND INTRO) */
-.welcome {
-  height: 100vh;
-}
-.welcome-container {
-  display: flex;
-  margin-top: 5%;
-}
-.welcome-child {
-  flex: 1;
-}
-.welcome-image {
-  display: flex;
-  border-radius: 100rem;
-  height: auto;
-  width: auto;
-  max-width: 300px;
-  max-height: 300px;
-  margin-left: auto;
-  margin-right: 10em;
-}
-.welcome-container p {
-  font-size: 3rem;
-}
+} */
 
 /* ABOUT CARDS */
-#cards {
+#about {
 }
-.cards {
+.about,
+.contact {
   height: 100vh;
-  background-color: #668a84;
-}
-.cards-flex-container {
-  height: 50vh;
-  border: solid black;
-  background-color: white;
+  border: solid #eedede;
   display: flex;
-  background-color: #668a84;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fffee9;
 }
