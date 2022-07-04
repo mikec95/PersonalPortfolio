@@ -10,28 +10,40 @@ html {
 body {
   position: relative;
 }
-body,
-header,
-.welcome-container {
-  background-color: #ee1d52;
-}
+footer,
 .parent-container {
   width: 100%;
   margin: 0 auto;
 }
-h2,
+
 header a,
 .welcome p {
+  text-decoration: none;
   color: #ffffff;
+}
+.navbar,
+.welcome,
+.about,
+.contact {
+  display: flex;
+}
+
+.welcome,
+.about,
+.contact {
+  height: 100vh;
+  background-color: #ffffff;
 }
 .hide {
   visibility: hidden;
 }
 
 /* WELCOME SECTION (PICTURE AND INTRO) */
+.navbar,
 .welcome {
-  height: 100vh;
-  display: flex;
+  background-color: #ee1d52;
+}
+.welcome {
   justify-content: flex-end;
   padding-top: 3rem;
 }
@@ -52,12 +64,12 @@ header a,
 #navbar {
 }
 .navbar {
-  display: flex;
   justify-content: space-between;
   padding: 20px 60px;
   position: sticky;
   top: 0;
 }
+
 .navbar ul li {
   font-variant: small-caps;
   list-style: none;
@@ -71,22 +83,30 @@ header a,
   transition: all 0.3s ease 0s;
   border-radius: 100;
   align-items: center;
+  text-decoration: none;
 }
 .navbar ul li:hover a,
 .navbar ul li a:active {
-  color: #fffee9;
+  color: #ffffff;
   text-decoration: line-through;
 }
 
-/* ABOUT CARDS */
+/* ABOUT SECTION */
 #about {
 }
-.about,
-.contact {
-  height: 100vh;
-  border: solid #eedede;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #fffee9;
+
+/* CONTACT SECTION */
+.contact-form {
+  width: 100%;
+  display: grid;
+  padding: 5rem;
+  border: solid black;
+}
+.contact-form h1 {
+  color: #69c9d0;
+}
+
+/* FOOTER */
+footer {
+  height: 4%;
 }
